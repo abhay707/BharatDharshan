@@ -785,8 +785,17 @@
           <article class="state-card" data-region="{{ strtolower($region) }}" data-name="{{ strtolower($state->name) }}" onclick="window.location='{{ route('states.show', $state->slug) }}'">
             <div class="img-wrap">
               <div class="gradient grad-{{ strtolower($region) }}"></div>
-              @php $cardImg = $state->getFirstMediaUrl('gallery') ?: $state->getFirstMediaUrl('hero'); @endphp
-              @if($cardImg)<img src="{{ $cardImg }}" alt="{{ $state->name }}" class="absolute inset-0 w-full h-full object-cover" style="object-position: center 40%; mix-blend-mode: overlay; opacity: 0.6;" loading="lazy">@endif
+              @php
+                $portraitImages = [
+                    'kerala'      => '/images/states/Kerala Image Portrate.jpg',
+                    'punjab'      => '/images/states/Punjab Portrate.jpg',
+                    'rajasthan'   => '/images/states/Rajasthan Portrate 2.jpg',
+                    'tamil-nadu'  => '/images/states/Tamil Nadu Portrate.jpg',
+                    'west-bengal' => '/images/states/West Bengal Portrate.jpg',
+                ];
+                $cardImg = $portraitImages[$state->slug] ?? null;
+              @endphp
+              @if($cardImg)<img src="{{ $cardImg }}" alt="{{ $state->name }}" class="absolute inset-0 w-full h-full object-cover" style="object-position: center 30%; mix-blend-mode: overlay; opacity: 0.7;" loading="lazy">@endif
               <div class="pattern"></div>
               <div class="glyph">{{ substr($state->name, 0, 1) }}</div>
               <div class="region-tag-pill">{{ $region }}</div>

@@ -1193,10 +1193,19 @@
 
   <div class="states-grid reveal">
     @foreach($featured_states as $state)
-    @php $cardImg = $state->getFirstMediaUrl('gallery'); @endphp
+    @php
+      $portraitImages = [
+          'kerala'      => '/images/states/Kerala Image Portrate.jpg',
+          'punjab'      => '/images/states/Punjab Portrate.jpg',
+          'rajasthan'   => '/images/states/Rajasthan Portrate 2.jpg',
+          'tamil-nadu'  => '/images/states/Tamil Nadu Portrate.jpg',
+          'west-bengal' => '/images/states/West Bengal Portrate.jpg',
+      ];
+      $cardImg = $portraitImages[$state->slug] ?? null;
+    @endphp
     <article class="state-card" onclick="window.location='{{ route('states.show', $state->slug) }}'">
       <div class="sc-img" style="background: {{ $gradients[$state->region] ?? 'linear-gradient(135deg, #C9901A, #E8580A)' }}">
-        @if($cardImg)<img src="{{ $cardImg }}" alt="{{ $state->name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;mix-blend-mode:overlay;opacity:0.55;" loading="lazy">@endif
+        @if($cardImg)<img src="{{ $cardImg }}" alt="{{ $state->name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;mix-blend-mode:overlay;opacity:0.7;" loading="lazy">@endif
         <div class="sc-pattern"></div>
         <span class="sc-region">{{ $state->region }}</span>
         <span class="sc-init">{{ substr($state->name, 0, 1) }}</span>

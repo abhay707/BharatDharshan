@@ -20,6 +20,20 @@
       'Stepwell' => 'linear-gradient(160deg,#0D4A3A 0%,#1B4F8A 40%,#0D2030 75%,#0D0500 100%)',
     ];
     $heroGradient = $heroGradients[$monument->type] ?? 'linear-gradient(160deg,#8B1A1A 0%,#4A0404 40%,#1A0500 75%,#0D0500 100%)';
+
+    $landscapeImages = [
+      'amber-fort'               => '/images/Heritage/Amber Fort Landscape.jpg',
+      'bekal-fort'               => '/images/Heritage/Bekal Fort Image Landscape.jpg',
+      'brihadeeswarar-temple'    => '/images/Heritage/Brihadeeswarar Temple landscape.jpg',
+      'dakshineswar-kali-temple' => '/images/Heritage/Dakshineswar Kali Temple Landscape.jpg',
+      'golden-temple'            => '/images/Heritage/Golden Temple Image Landscape.jpg',
+      'hawa-mahal'               => '/images/Heritage/Hawa Mahal Landscape.jpg',
+      'padmanabhapuram-palace'   => '/images/Heritage/Padmanabhapuram Palace Landscape.jpg',
+      'qila-mubarak-patiala'     => '/images/Heritage/Qila Mubarak Patiala Landspace.jpg',
+      'shore-temple-mahabalipuram' => '/images/Heritage/Shore Temple Mahabalipuram Landscape.jpg',
+      'victoria-memorial'        => '/images/Heritage/Victoria Memorial Image Landscape.jpg',
+    ];
+    $heroImg = $landscapeImages[$monument->slug] ?? null;
   @endphp
 
   .hero {
@@ -27,7 +41,16 @@
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
+    background-color: #0D0500;
+    @if($heroImg)
+    background-image:
+      linear-gradient(to top, rgba(13,5,0,0.95) 0%, rgba(13,5,0,0.6) 40%, rgba(13,5,0,0.2) 100%),
+      url('{{ $heroImg }}');
+    background-size: cover;
+    background-position: center 35%;
+    @else
     background: {{ $heroGradient }};
+    @endif
     color: #fff;
     display: flex; flex-direction: column; justify-content: flex-end;
   }

@@ -185,6 +185,20 @@ nav[aria-label="Pagination Navigation"] [aria-current="page"] span {
 @endsection
 
 @section('content')
+@php
+$monumentPortraits = [
+    'amber-fort'               => '/images/Heritage/Amber Fort Portorate.jpg',
+    'bekal-fort'               => '/images/Heritage/Bekal Fort Picture portorate.jpg',
+    'brihadeeswarar-temple'    => '/images/Heritage/Brihadeeswarar Temple Portorate.jpg',
+    'dakshineswar-kali-temple' => '/images/Heritage/Dakshineswar Kali Temple Portorate.jpg',
+    'golden-temple'            => '/images/Heritage/Golden Temple Portorate.jpg',
+    'hawa-mahal'               => '/images/Heritage/Hawa Mahal Portorate.jpg',
+    'padmanabhapuram-palace'   => '/images/Heritage/Padmanabhapuram Palace portorate.jpg',
+    'qila-mubarak-patiala'     => '/images/Heritage/Qila Mubarak Patiala Portorate.jpg',
+    'shore-temple-mahabalipuram' => '/images/Heritage/Shore Temple Mahabalipuram Portorate.jpg',
+    'victoria-memorial'        => '/images/Heritage/Victoria Memorial Image Portorate.jpg',
+];
+@endphp
 <section class="hero" data-screen-label="01 Heritage Hero">
   <svg class="yantra" viewBox="0 0 600 600" fill="none" stroke="#C9901A" stroke-width="0.7" aria-hidden="true">
     <g transform="translate(300 300)">
@@ -275,8 +289,8 @@ nav[aria-label="Pagination Navigation"] [aria-current="page"] span {
     @endphp
     <article class="feat" onclick="window.location='{{ route('monuments.show', $m->slug) }}'">
       <div class="bg {{ $gClass }}">
-         @if($m->getFirstMediaUrl('gallery'))
-           <img src="{{ $m->getFirstMediaUrl('gallery') }}" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60" style="position: absolute; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: overlay; opacity: 0.6;">
+         @if(isset($monumentPortraits[$m->slug]))
+           <img src="{{ $monumentPortraits[$m->slug] }}" style="position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; mix-blend-mode: overlay; opacity: 0.7;">
          @endif
       </div>
       <div class="pattern"></div>
@@ -322,8 +336,8 @@ nav[aria-label="Pagination Navigation"] [aria-current="page"] span {
     <article class="card" onclick="window.location='{{ route('monuments.show', $m->slug) }}'">
       <div class="img">
         <div class="bg {{ $gClass }}">
-           @if($m->getFirstMediaUrl('gallery'))
-             <img src="{{ $m->getFirstMediaUrl('gallery') }}" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60" style="position: absolute; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: overlay; opacity: 0.6;">
+           @if(isset($monumentPortraits[$m->slug]))
+             <img src="{{ $monumentPortraits[$m->slug] }}" style="position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; mix-blend-mode: overlay; opacity: 0.7;">
            @endif
         </div>
         <div class="pattern"></div>

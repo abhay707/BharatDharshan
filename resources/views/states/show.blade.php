@@ -828,9 +828,18 @@
 @endsection
 
 @section('content')
-@php $heroImg = $state->getFirstMediaUrl('hero'); @endphp
+@php
+$landscapeImages = [
+    'kerala'      => '/images/states/Kerala Landscape.jpg',
+    'punjab'      => '/images/states/Punjab Landscape.jpg',
+    'rajasthan'   => '/images/states/Rajasthan Landscape.jpg',
+    'tamil-nadu'  => '/images/states/Tamil Nadu landscape.jpg',
+    'west-bengal' => '/images/states/West Bengal Landscape.jpg',
+];
+$heroImg = $landscapeImages[$state->slug] ?? null;
+@endphp
 <!-- HERO -->
-<section class="hero{{ $heroImg ? ' has-photo' : '' }}" data-screen-label="01 State Hero"@if($heroImg) style="background-image: linear-gradient(to top, rgba(13,5,0,0.82) 0%, rgba(13,5,0,0.45) 45%, rgba(13,5,0,0.18) 100%), url('{{ $heroImg }}'); background-size: cover; background-position: center 55%;"@endif>
+<section class="hero{{ $heroImg ? ' has-photo' : '' }}" data-screen-label="01 State Hero"@if($heroImg) style="background-image: linear-gradient(to top, rgba(13,5,0,0.88) 0%, rgba(13,5,0,0.5) 40%, rgba(13,5,0,0.12) 100%), url('{{ $heroImg }}'); background-size: cover; background-position: center 40%;"@endif>
   @if(!$heroImg)<div class="giant-letter">{{ substr($state->name, 0, 1) }}</div>@endif
   @if(!$heroImg)<div class="mandala-overlay"></div>@endif
 
