@@ -53,6 +53,8 @@ RUN apk add --no-cache \
     icu-dev \
     oniguruma-dev \
     mysql-client \
+    postgresql-client \
+    libpq-dev \
     tzdata
 
 # ── PHP extensions ──────────────────────────────────────────
@@ -60,6 +62,8 @@ RUN docker-php-ext-configure gd --with-jpeg --with-webp \
  && docker-php-ext-install -j$(nproc) \
         pdo \
         pdo_mysql \
+        pdo_pgsql \
+        pgsql \
         mbstring \
         exif \
         pcntl \
