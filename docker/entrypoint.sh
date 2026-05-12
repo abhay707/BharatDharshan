@@ -13,6 +13,7 @@ php artisan event:cache
 echo "==> Waiting for database connection..."
 MAX_TRIES=30
 COUNT=0
+DB_READY=0
 until php artisan db:monitor --max=1 > /dev/null 2>&1; do
     COUNT=$((COUNT + 1))
     if [ "$COUNT" -ge "$MAX_TRIES" ]; then
@@ -24,12 +25,24 @@ until php artisan db:monitor --max=1 > /dev/null 2>&1; do
     sleep 1
 done
 
-# Run DB migrations if DB is available
+# Run DB migrations and seed if DB is available
 if php artisan db:monitor --max=1 > /dev/null 2>&1; then
+    DB_READY=1
     echo "==> Running migrations..."
     php artisan migrate --force
+
     echo "==> Creating storage symlink..."
     php artisan storage:link || true
+
+    # Seed only when the states table is empty (first boot)
+    STATE_COUNT=$(php artisan tinker --execute="echo \App\Models\State::count();" 2>/dev/null | tail -1 | tr -d '[:space:]')
+    if [ "$STATE_COUNT" = "0" ] || [ -z "$STATE_COUNT" ]; then
+        echo "==> Database is empty — running seeders..."
+        php artisan db:seed --force
+        echo "==> Seeding complete."
+    else
+        echo "==> Database already has data (${STATE_COUNT} states) — skipping seed."
+    fi
 else
     echo "==> Skipping migrations (no DB connection)."
 fi
