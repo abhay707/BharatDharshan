@@ -43,6 +43,24 @@ if php artisan db:monitor --max=1 > /dev/null 2>&1; then
     else
         echo "==> Database already has data (${STATE_COUNT} states) — skipping seed."
     fi
+
+    # Create admin user if it doesn't exist
+    ADMIN_EXISTS=$(php artisan tinker --execute="echo \App\Models\User::where('email','admin@bharatdarshan.com')->count();" 2>/dev/null | tail -1 | tr -d '[:space:]')
+    if [ "$ADMIN_EXISTS" = "0" ] || [ -z "$ADMIN_EXISTS" ]; then
+        echo "==> Creating admin user..."
+        php artisan tinker --execute="
+            \App\Models\User::create([
+                'name'     => 'Admin',
+                'email'    => 'admin@bharatdarshan.com',
+                'password' => bcrypt('password'),
+                'email_verified_at' => now(),
+            ]);
+            echo 'Admin user created.';
+        " 2>/dev/null
+        echo "==> Admin user ready: admin@bharatdarshan.com"
+    else
+        echo "==> Admin user already exists — skipping."
+    fi
 else
     echo "==> Skipping migrations (no DB connection)."
 fi
