@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Festivals of India · BharatDarshan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #0D0500;
+    --ink-2: #1A0A00;
+    --saffron: #E8580A;
+    --gold: #C9901A;
+    --crimson: #8B1A1A;
+    --parchment: #F5EDD8;
+    --cream: #FAF6EE;
+    --serif: "Cormorant Garamond", serif;
+    --serif-sc: "Cormorant SC", serif;
+    --sans: "DM Sans", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--cream); color: var(--ink); font-family: var(--sans); font-weight: 300; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  .text-label { font-family: var(--sans); font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 500; }
+
+  /* ============ NAV ============ */
+  .nav { position: fixed; top: 0; left: 0; right: 0; height: 64px; background: rgba(13,5,0,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(201,144,26,0.15); z-index: 200; display: flex; align-items: center; padding: 0 48px; gap: 48px; }
+  .logo { display: flex; align-items: baseline; gap: 6px; cursor: pointer; }
+  .logo .b { font-family: var(--serif-sc); font-weight: 600; font-size: 22px; color: var(--gold); letter-spacing: 0.04em; text-transform: uppercase; }
+  .logo .d { font-family: var(--sans); font-weight: 300; font-size: 16px; color: var(--parchment); }
+  .logo .dot { width: 4px; height: 4px; background: var(--saffron); border-radius: 50%; align-self: center; transform: translateY(-2px); }
+  .nav-links { display: flex; gap: 36px; margin-left: auto; margin-right: 24px; }
+  .nav-link { font-family: var(--sans); font-weight: 400; font-size: 13px; letter-spacing: 0.08em; color: var(--parchment); text-transform: uppercase; position: relative; padding: 6px 0; cursor: pointer; }
+  .nav-link.active { color: var(--gold); }
+  .nav-link::after { content: ""; position: absolute; left: 50%; bottom: 0; width: 0; height: 1px; background: var(--gold); transition: width 0.4s ease, left 0.4s ease; }
+  .nav-link:hover::after, .nav-link.active::after { width: 100%; left: 0; }
+  .admin-btn { font-family: var(--sans); font-weight: 500; font-size: 11px; letter-spacing: 0.14em; color: var(--gold); background: transparent; border: 1px solid var(--gold); padding: 7px 14px; text-transform: uppercase; cursor: pointer; transition: all 0.3s ease; }
+  .admin-btn:hover { background: var(--gold); color: var(--ink); }
+
+  /* ============ SHIMMER LABEL ============ */
+  @keyframes shimmer { 0% { background-position: 0% center; } 100% { background-position: 200% center; } }
+  .section-label {
+    display: inline-block;
+    font-family: var(--sans); font-size: 0.72rem;
+    letter-spacing: 0.32em; text-transform: uppercase;
+    background: linear-gradient(90deg, #C9901A, #F5D876, #C9901A);
+    background-size: 200% auto;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; color: transparent;
+    animation: shimmer 3s linear infinite;
+    margin-bottom: 14px;
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    min-height: 100vh; width: 100%;
+    color: #fff;
+    background: radial-gradient(ellipse at 60% 40%,
+      #8B3A0A 0%, #4A1500 35%,
+      #1A0500 65%, #0D0500 100%);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    align-items: center;
+    padding: 128px 80px 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  }
+  .hero::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 80% 20%, rgba(232,88,10,0.18), transparent 50%),
+      radial-gradient(ellipse at 10% 90%, rgba(201,144,26,0.12), transparent 55%);
+    pointer-events: none;
+  }
+  .particles { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+  .p { position: absolute; border-radius: 50%; background: var(--gold);
+       box-shadow: 0 0 6px rgba(201,144,26,0.6); opacity: 0;
+       animation: floatUp linear infinite; }
+  .p.s { background: var(--saffron); box-shadow: 0 0 8px rgba(232,88,10,0.5); }
+  @keyframes floatUp {
+    0% { transform: translateY(0); opacity: 0; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.3; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+  }
+
+  .hero-left { position: relative; z-index: 5; max-width: 560px; }
+  .hero-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: var(--serif-sc); font-weight: 500;
+    font-size: 0.7rem; letter-spacing: 0.2em;
+    padding: 8px 18px; text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .hero h1 { font-family: var(--serif); line-height: 1; letter-spacing: -0.01em; }
+  .hero h1 .l1 { display: block; font-weight: 700; font-size: clamp(3rem,5vw,5rem); color: #fff; }
+  .hero h1 .l2 { display: block; font-weight: 700; font-style: italic; font-size: clamp(4rem,7vw,7rem); color: var(--gold); margin-top: 4px; text-shadow: 0 0 60px rgba(201,144,26,0.35); }
+  .gold-line { width: 80px; height: 2px; background: var(--gold); margin: 28px 0 22px; }
+  .hero-sub {
+    font-family: var(--serif); font-style: italic;
+    font-weight: 400; font-size: 1.3rem;
+    color: rgba(245,237,216,0.7);
+    line-height: 1.5; max-width: 440px;
+  }
+  .stats { display: flex; gap: 36px; margin-top: 38px; }
+  .stat { position: relative; padding-right: 36px; }
+  .stat:not(:last-child)::after {
+    content: ""; position: absolute; right: 0; top: 8px; bottom: 8px;
+    width: 1px; background: rgba(201,144,26,0.35);
+  }
+  .stat .num { font-family: var(--serif); font-weight: 600; font-size: 2rem; color: var(--gold); line-height: 1; }
+  .stat .lab { font-family: var(--sans); font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,237,216,0.55); margin-top: 6px; }
+
+  .anim { opacity: 0; transform: translateY(18px); animation: fadeUp 0.85s cubic-bezier(.2,.7,.2,1) forwards; }
+  @keyframes fadeUp { to { opacity: 1; transform: none; } }
+
+  /* calendar preview right */
+  .cal-preview {
+    position: relative; z-index: 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    opacity: 0;
+    animation: fadeUp 1s 0.6s cubic-bezier(.2,.7,.2,1) forwards;
+    max-width: 420px;
+    justify-self: end;
+  }
+  .cal-cell {
+    border: 1px solid rgba(201,144,26,0.08);
+    background: rgba(255,255,255,0.02);
+    padding: 16px 14px;
+    aspect-ratio: 1 / 0.85;
+    display: flex; flex-direction: column; justify-content: space-between;
+    transition: background 0.25s, border-color 0.25s;
+  }
+  .cal-cell.has { background: rgba(201,144,26,0.08); border-color: rgba(201,144,26,0.2); }
+  .cal-cell:hover { background: rgba(232,88,10,0.12); border-color: var(--saffron); }
+  .cal-cell .m { font-family: var(--serif-sc); font-weight: 600; font-size: 0.85rem; color: var(--gold); letter-spacing: 0.08em; }
+  .cal-cell .dots { display: flex; gap: 4px; align-items: center; height: 8px; }
+  .cal-cell .dots span { width: 6px; height: 6px; border-radius: 50%; background: var(--saffron); }
+
+  .scroll-ind { position: absolute; bottom: 38px; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 10px; z-index: 5;
+    opacity: 0; animation: fadeUp 1s 1.1s forwards; }
+  .scroll-ind span { font-family: var(--sans); font-size: 0.62rem; letter-spacing: 0.32em; text-transform: uppercase; color: rgba(245,237,216,0.55); }
+  .scroll-ind svg { animation: bounceArrow 1.8s ease-in-out infinite; }
+  @keyframes bounceArrow { 0%, 100% { transform: translateY(0); opacity: 0.6; } 50% { transform: translateY(8px); opacity: 1; } }
+
+  /* ============ FILTER BAR ============ */
+  .filter-bar {
+    position: sticky; top: 64px; z-index: 100;
+    width: 100%;
+    background: rgba(255,255,255,0.98);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(13,5,0,0.1);
+    padding: 20px 80px;
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr 0.9fr;
+    gap: 36px; align-items: end;
+    opacity: 0; transform: translateY(-20px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+  }
+  .filter-bar.in { opacity: 1; transform: none; }
+  .f-label { display: block; font-family: var(--sans); font-size: 0.62rem; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(13,5,0,0.45); margin-bottom: 8px; }
+  .f-input, .f-select {
+    width: 100%;
+    font-family: var(--sans); font-weight: 400; font-size: 0.95rem;
+    color: var(--ink);
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid rgba(201,144,26,0.3);
+    padding: 8px 0 8px 26px;
+    appearance: none;
+    transition: border-color 0.2s;
+  }
+  .f-input:focus, .f-select:focus { outline: none; border-bottom-color: var(--gold); }
+  .f-search { position: relative; }
+  .f-search::before {
+    content: ""; position: absolute; left: 0; bottom: 12px;
+    width: 14px; height: 14px;
+    border: 1.5px solid var(--gold); border-radius: 50%;
+  }
+  .f-search::after {
+    content: ""; position: absolute; left: 11px; bottom: 6px;
+    width: 6px; height: 1.5px; background: var(--gold);
+    transform: rotate(45deg); transform-origin: left;
+  }
+  .f-sel { position: relative; }
+  .f-sel::after {
+    content: ""; position: absolute; right: 4px; bottom: 14px;
+    width: 7px; height: 7px;
+    border-right: 1.5px solid var(--gold); border-bottom: 1.5px solid var(--gold);
+    transform: rotate(45deg); pointer-events: none;
+  }
+  .f-count { font-family: var(--serif); font-style: italic; font-weight: 500; color: var(--gold); font-size: 1.1rem; }
+  .f-clear { display: block; margin-top: 6px; font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.18em; color: var(--saffron); text-transform: uppercase; cursor: pointer; }
+
+  /* ============ TICKER ============ */
+  .ticker { background: var(--ink); padding: 24px 0; overflow: hidden; }
+  .ticker-label { text-align: center; font-family: var(--serif-sc); font-size: 0.72rem; letter-spacing: 0.32em; color: var(--gold); text-transform: uppercase; margin-bottom: 14px; }
+  .ticker-track {
+    display: flex; gap: 60px; width: max-content; align-items: center;
+    animation: ticker 35s linear infinite;
+  }
+  .ticker-track:hover { animation-play-state: paused; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .t-item { display: flex; align-items: center; gap: 14px; white-space: nowrap; }
+  .t-name { font-family: var(--serif); font-weight: 600; font-size: 1.1rem; color: #fff; }
+  .t-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--c, #fff); display: inline-block; }
+  .t-meta { font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,237,216,0.5); }
+  .t-sep { color: var(--gold); font-family: var(--serif); }
+
+  /* ============ CALENDAR SECTION ============ */
+  .calendar-section { background: var(--cream); padding: 80px; }
+  .cal-head {
+    max-width: 1400px; margin: 0 auto 50px;
+    display: flex; justify-content: space-between; align-items: flex-end; gap: 24px;
+    flex-wrap: wrap;
+  }
+  .cal-head-left h2 { font-family: var(--serif); font-weight: 700; font-size: 3rem; color: var(--ink-2); line-height: 1.05; letter-spacing: -0.01em; }
+  .view-toggle { display: flex; gap: 0; }
+  .vt {
+    font-family: var(--sans); font-size: 0.72rem;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    padding: 10px 18px;
+    border: 1px solid var(--gold); color: var(--gold);
+    background: transparent; cursor: pointer;
+    transition: all 0.2s;
+  }
+  .vt.active { background: var(--saffron); color: #fff; border-color: var(--saffron); }
+  .vt:first-child { border-right: none; }
+
+  .months { max-width: 1400px; margin: 0 auto; }
+  .month {
+    position: relative;
+    padding: 48px 0 24px;
+  }
+  .month-big-num {
+    position: absolute; left: 0; top: 0;
+    font-family: var(--serif); font-weight: 700;
+    font-size: 9rem; line-height: 1;
+    color: var(--ink-2); opacity: 0.04;
+    pointer-events: none; z-index: 0;
+  }
+  .month-head {
+    position: relative; z-index: 1;
+    display: flex; align-items: center; gap: 16px;
+    margin-bottom: 28px;
+  }
+  .month-name {
+    font-family: var(--sans); font-weight: 500;
+    font-size: 0.78rem; letter-spacing: 0.3em;
+    text-transform: uppercase; color: var(--saffron);
+  }
+  .month-rule { flex-grow: 1; height: 1px; background: rgba(201,144,26,0.25); }
+  .month-count {
+    background: var(--saffron); color: #fff;
+    font-family: var(--sans); font-weight: 500;
+    font-size: 0.7rem; letter-spacing: 0.1em;
+    padding: 4px 12px; text-transform: uppercase;
+  }
+  .month-empty {
+    font-family: var(--serif); font-style: italic;
+    font-weight: 300; font-size: 0.95rem;
+    color: rgba(13,5,0,0.4);
+    padding: 4px 0 16px;
+  }
+  .month.dim .month-name { color: rgba(201,144,26,0.5); }
+  .month.dim .month-big-num { opacity: 0.025; }
+
+  .cards-row {
+    display: flex; gap: 20px;
+    overflow-x: auto; padding-bottom: 16px;
+    scrollbar-width: none;
+  }
+  .cards-row::-webkit-scrollbar { display: none; }
+
+  .card {
+    flex: 0 0 260px;
+    background: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex; flex-direction: column;
+  }
+  .card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(13,5,0,0.12); }
+  .card-top {
+    position: relative;
+    height: 130px;
+    overflow: hidden;
+  }
+  .card-top .first-word {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--serif); font-style: italic; font-weight: 600;
+    font-size: 4rem; color: #fff; opacity: 0.12;
+    line-height: 1; pointer-events: none;
+    letter-spacing: -0.02em;
+  }
+  .rel-badge {
+    position: absolute; top: 10px; left: 10px;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    font-family: var(--sans); font-weight: 500;
+    font-size: 0.62rem; letter-spacing: 0.18em;
+    padding: 4px 10px; text-transform: uppercase;
+    backdrop-filter: blur(4px);
+  }
+  .card-body {
+    background: #fff;
+    border-left: 3px solid var(--c, var(--gold));
+    padding: 16px 16px 18px;
+    flex: 1; display: flex; flex-direction: column; gap: 4px;
+  }
+  .card-name {
+    font-family: var(--serif); font-weight: 600;
+    font-size: 1.2rem; color: var(--ink-2); line-height: 1.2;
+  }
+  .card-meta {
+    display: flex; gap: 12px; align-items: center;
+    margin-top: 2px;
+  }
+  .card-state { font-family: var(--sans); font-weight: 300; font-size: 0.72rem; color: var(--gold); letter-spacing: 0.05em; }
+  .card-dur { font-family: var(--sans); font-weight: 400; font-size: 0.72rem; color: var(--saffron); }
+  .card-tag {
+    font-family: var(--serif); font-style: italic;
+    font-size: 0.92rem; line-height: 1.45;
+    color: #6B5B47;
+    margin-top: 10px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-link {
+    font-family: var(--sans); font-weight: 500;
+    font-size: 0.78rem; letter-spacing: 0.16em;
+    color: var(--saffron); text-transform: uppercase;
+    margin-top: 12px; display: inline-flex; gap: 6px;
+    transition: gap 0.2s;
+  }
+  .card:hover .card-link { gap: 12px; }
+
+  /* gradients by religion */
+  .g-hindu { background: linear-gradient(135deg, #E8580A, #8B1A1A); }
+  .g-muslim { background: linear-gradient(135deg, #2D6A4F, #1B4F8A); }
+  .g-sikh { background: linear-gradient(135deg, #1B4F8A, #4A90D9); }
+  .g-christian { background: linear-gradient(135deg, #8B1A1A, #C0392B); }
+  .g-buddhist { background: linear-gradient(135deg, #4A0404, #8B1A1A); }
+  .g-secular { background: linear-gradient(135deg, #C9901A, #E8580A); }
+
+  /* ============ RELIGION MOSAIC ============ */
+  .religions { background: var(--parchment); padding: 80px; }
+  .religions-head { max-width: 1400px; margin: 0 auto 50px; text-align: center; }
+  .religions-head h2 { font-family: var(--serif); font-weight: 700; font-size: 3rem; color: var(--ink); letter-spacing: -0.01em; }
+  .religions-head p { font-family: var(--sans); font-weight: 300; font-size: 1.05rem; color: rgba(13,5,0,0.58); margin-top: 12px; max-width: 540px; margin-left: auto; margin-right: auto; }
+  .mosaic {
+    max-width: 1400px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 140px 140px;
+    gap: 12px;
+  }
+  .tile {
+    padding: 24px;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    gap: 4px; cursor: pointer;
+    transition: all 0.25s ease;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .tile:hover { transform: scale(1.02); filter: brightness(1.1); z-index: 2; }
+  .tile-name { font-family: var(--serif); font-weight: 700; font-size: 2rem; line-height: 1; }
+  .tile-count { font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255,255,255,0.78); }
+  .tile-arrow { position: absolute; top: 22px; right: 22px; color: rgba(255,255,255,0.6); font-family: var(--serif); font-size: 1.2rem; transition: transform 0.25s, color 0.25s; }
+  .tile:hover .tile-arrow { transform: translate(4px, -4px); color: #fff; }
+  .tile.hindu { grid-row: span 2; }
+  .tile.secular-wide { grid-column: span 2; }
+
+  /* ============ FINAL CTA ============ */
+  .final-cta { background: var(--ink); padding: 100px 80px; text-align: center; }
+  .final-cta .orn { color: var(--gold); font-family: var(--serif); font-size: 2rem; margin-bottom: 24px; }
+  .final-cta h2 { font-family: var(--serif); font-weight: 700; font-size: 3.5rem; color: #fff; line-height: 1.05; letter-spacing: -0.01em; }
+  .final-cta p { font-family: var(--sans); font-weight: 300; font-size: 1rem; color: rgba(245,237,216,0.6); max-width: 500px; margin: 22px auto 38px; line-height: 1.7; }
+  .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    font-family: var(--sans); font-weight: 500;
+    font-size: 0.78rem; letter-spacing: 0.22em;
+    padding: 16px 30px; text-transform: uppercase;
+    cursor: pointer; transition: all 0.25s ease;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-fill { background: var(--saffron); color: #fff; border: 1px solid var(--saffron); }
+  .btn-fill:hover { background: #ff6a1a; }
+  .btn-line { background: transparent; border: 1px solid var(--gold); color: var(--gold); }
+  .btn-line:hover { background: var(--gold); color: var(--ink); }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--ink); color: rgba(245,237,216,0.55);
+    padding: 28px 48px;
+    border-top: 1px solid rgba(201,144,26,0.15);
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: var(--sans); font-size: 12px; letter-spacing: 0.06em;
+  }
+
+  /* ============ REVEAL ============ */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.9s ease, transform 0.9s cubic-bezier(.2,.7,.2,1); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 1024px) {
+    .hero { grid-template-columns: 1fr; padding: 110px 32px 80px; }
+    .cal-preview { justify-self: start; margin-top: 40px; max-width: 100%; }
+    .calendar-section, .religions, .final-cta { padding: 60px 32px; }
+    .filter-bar { padding: 16px 32px; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .card { flex: 0 0 230px; }
+    .mosaic { grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 120px 120px 120px; }
+    .tile.hindu { grid-row: span 2; }
+    .tile.secular-wide { grid-column: span 1; }
+  }
+  @media (max-width: 768px) {
+    .nav { padding: 0 22px; gap: 16px; }
+    .nav-links { gap: 16px; margin-right: 8px; }
+    .nav-link { font-size: 11px; }
+    .hero { padding: 100px 24px 80px; }
+    .hero h1 .l1 { font-size: 3.5rem; }
+    .hero h1 .l2 { font-size: 5rem; }
+    .stats { gap: 18px; }
+    .stat { padding-right: 18px; }
+    .cal-preview { grid-template-columns: 1fr 1fr; }
+    .filter-bar { grid-template-columns: 1fr 1fr; padding: 16px 22px; gap: 18px; }
+    .calendar-section, .religions, .final-cta { padding: 60px 22px; }
+    .month-big-num { font-size: 5rem; }
+    .card { flex: 0 0 200px; }
+    .cal-head h2 { font-size: 2rem; }
+    .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, 120px); }
+    .tile.hindu, .tile.secular-wide { grid-row: auto; grid-column: auto; }
+    .final-cta h2 { font-size: 2.2rem; }
+    footer { flex-direction: column; gap: 8px; text-align: center; padding: 22px; }
+  }
+</style>
+</head>
+<body data-screen-label="Festivals Index">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">
+    <span class="b">Bharat</span>
+    <span class="dot"></span>
+    <span class="d">darshan</span>
+  </div>
+  <div class="nav-links">
+    <a class="nav-link" href="BharatDarshan Hero.html">Home</a>
+    <a class="nav-link" href="BharatDarshan States.html">States</a>
+    <a class="nav-link" href="BharatDarshan Heritage.html">Heritage</a>
+    <a class="nav-link active">Festivals</a>
+    <a class="nav-link" href="BharatDarshan Cuisine.html">Cuisine</a>
+  </div>
+  <button class="admin-btn">Admin →</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero" data-screen-label="01 Hero">
+  <div class="particles" id="particles" aria-hidden="true"></div>
+
+  <div class="hero-left">
+    <div class="hero-pill anim" style="animation-delay: 0ms;">
+      <span>✦</span><span>Festivals of India</span><span>✦</span>
+    </div>
+    <h1>
+      <span class="l1 anim" style="animation-delay: 100ms;">365 Days of</span>
+      <span class="l2 anim" style="animation-delay: 250ms;">Celebration</span>
+    </h1>
+    <div class="gold-line anim" style="animation-delay: 400ms;"></div>
+    <p class="hero-sub anim" style="animation-delay: 500ms;">A tradition for every season. A festival for every soul.</p>
+    <div class="stats anim" style="animation-delay: 700ms;">
+      <div class="stat"><div class="num">15</div><div class="lab">Festivals</div></div>
+      <div class="stat"><div class="num">8</div><div class="lab">Traditions</div></div>
+      <div class="stat"><div class="num">12</div><div class="lab">Months</div></div>
+    </div>
+  </div>
+
+  <div class="cal-preview" aria-hidden="true">
+    <div class="cal-cell has"><div class="m">JAN</div><div class="dots"><span></span><span></span><span></span></div></div>
+    <div class="cal-cell has"><div class="m">FEB</div><div class="dots"><span></span></div></div>
+    <div class="cal-cell has"><div class="m">MAR</div><div class="dots"><span></span></div></div>
+    <div class="cal-cell has"><div class="m">APR</div><div class="dots"><span></span><span></span></div></div>
+    <div class="cal-cell has"><div class="m">MAY</div><div class="dots"><span></span></div></div>
+    <div class="cal-cell"><div class="m">JUN</div><div class="dots"></div></div>
+    <div class="cal-cell"><div class="m">JUL</div><div class="dots"></div></div>
+    <div class="cal-cell has"><div class="m">AUG</div><div class="dots"><span></span><span></span></div></div>
+    <div class="cal-cell has"><div class="m">SEP</div><div class="dots"><span></span></div></div>
+    <div class="cal-cell has"><div class="m">OCT</div><div class="dots"><span></span><span></span><span></span></div></div>
+    <div class="cal-cell has"><div class="m">NOV</div><div class="dots"><span></span></div></div>
+    <div class="cal-cell has"><div class="m">DEC</div><div class="dots"><span></span></div></div>
+  </div>
+
+  <div class="scroll-ind">
+    <span>Scroll to explore</span>
+    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" stroke="#C9901A" stroke-width="1.5">
+      <path d="M7 2 V18 M2 13 L7 18 L12 13" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar" id="filterBar">
+  <div class="f-search">
+    <span class="f-label">Search</span>
+    <input class="f-input" type="text" placeholder="Search festivals..." />
+  </div>
+  <div class="f-sel">
+    <span class="f-label">Religion</span>
+    <select class="f-select">
+      <option>All Religions</option>
+      <option>Hindu</option><option>Muslim</option><option>Sikh</option>
+      <option>Christian</option><option>Buddhist</option>
+      <option>Secular</option><option>Tribal</option>
+    </select>
+  </div>
+  <div class="f-sel">
+    <span class="f-label">Month</span>
+    <select class="f-select">
+      <option>All Months</option>
+      <option>January</option><option>February</option><option>March</option>
+      <option>April</option><option>May</option><option>June</option>
+      <option>July</option><option>August</option><option>September</option>
+      <option>October</option><option>November</option><option>December</option>
+    </select>
+  </div>
+  <div>
+    <div class="f-count">15 Festivals</div>
+    <a class="f-clear">Clear →</a>
+  </div>
+</div>
+
+<!-- TICKER -->
+<section class="ticker" data-screen-label="02 Featured Ticker">
+  <div class="ticker-label">✦ &nbsp;Featured Festivals&nbsp; ✦</div>
+  <div class="ticker-track" id="tickerTrack"></div>
+</section>
+
+<!-- CALENDAR -->
+<section class="calendar-section" data-screen-label="03 Festival Calendar">
+  <div class="cal-head reveal">
+    <div class="cal-head-left">
+      <span class="section-label">✦ &nbsp;Festival Calendar&nbsp; ✦</span>
+      <h2>India's Year of Festivals</h2>
+    </div>
+    <div class="view-toggle">
+      <button class="vt active">☰ Calendar View</button>
+      <button class="vt">⊞ Grid View</button>
+    </div>
+  </div>
+
+  <div class="months" id="months"></div>
+</section>
+
+<!-- RELIGION MOSAIC -->
+<section class="religions" data-screen-label="04 Explore by Tradition">
+  <div class="religions-head reveal">
+    <span class="section-label">✦ &nbsp;Explore by Tradition&nbsp; ✦</span>
+    <h2>Celebrate Every Faith</h2>
+    <p>From the bonfire nights of Punjab to the harvest feasts of Kerala — every tradition has its own calendar of joy.</p>
+  </div>
+  <div class="mosaic">
+    <div class="tile hindu g-hindu reveal">
+      <span class="tile-arrow">→</span>
+      <div class="tile-name">Hindu</div>
+      <div class="tile-count">8 Festivals</div>
+    </div>
+    <div class="tile g-muslim reveal">
+      <span class="tile-arrow">→</span>
+      <div class="tile-name">Muslim</div>
+      <div class="tile-count">3 Festivals</div>
+    </div>
+    <div class="tile g-sikh reveal">
+      <span class="tile-arrow">→</span>
+      <div class="tile-name">Sikh</div>
+      <div class="tile-count">2 Festivals</div>
+    </div>
+    <div class="tile g-christian reveal">
+      <span class="tile-arrow">→</span>
+      <div class="tile-name">Christian</div>
+      <div class="tile-count">1 Festival</div>
+    </div>
+    <div class="tile g-buddhist reveal">
+      <span class="tile-arrow">→</span>
+      <div class="tile-name">Buddhist</div>
+      <div class="tile-count">1 Festival</div>
+    </div>
+    <div class="tile secular-wide g-secular reveal">
+      <span class="tile-arrow">→</span>
+      <div class="tile-name">Secular</div>
+      <div class="tile-count">2 Festivals</div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" data-screen-label="05 Final CTA">
+  <div class="orn reveal">✦</div>
+  <h2 class="reveal">Never Miss a Festival Again</h2>
+  <p class="reveal">Explore every tradition, every ritual, and every celebration across India's 28 states.</p>
+  <div class="cta-btns reveal">
+    <a class="btn btn-fill" href="BharatDarshan States.html">Explore All States →</a>
+    <a class="btn btn-line" href="BharatDarshan Heritage.html">View Heritage →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© MMXXVI · BharatDarshan · Indica Vol. I</div>
+  <div>Festivals Directory · Cultural Calendar 2026</div>
+</footer>
+
+<script>
+  // ============ DATA ============
+  const FESTIVALS = {
+    January: [
+      { name: "Lohri", religion: "Sikh", state: "Punjab", duration: "1 Day", tag: "The Bonfire That Ends Punjab's Winter" },
+      { name: "Makar Sankranti", religion: "Hindu", state: "Pan India", duration: "1 Day", tag: "The Day India Looks Upward as Kites Fill the Sky" },
+      { name: "Pongal", religion: "Hindu", state: "Tamil Nadu", duration: "4 Days", tag: "Harvest Gratitude in the Land of Temples" },
+    ],
+    February: [
+      { name: "Desert Festival", religion: "Secular", state: "Rajasthan", duration: "3 Days", tag: "Where the Dunes Come Alive with Colour and Music" },
+    ],
+    March: [
+      { name: "Holi", religion: "Hindu", state: "Pan India", duration: "2 Days", tag: "The Riot of Colours That Heralds Spring" },
+    ],
+    April: [
+      { name: "Baisakhi", religion: "Sikh", state: "Punjab", duration: "1 Day", tag: "Harvest Festival and the Birth of the Khalsa" },
+      { name: "Eid ul-Fitr", religion: "Muslim", state: "Pan India", duration: "3 Days", tag: "Breaking the Fast with Joy and Gratitude" },
+    ],
+    May: [
+      { name: "Thrissur Pooram", religion: "Hindu", state: "Kerala", duration: "1 Day", tag: "The Greatest Temple Festival on Earth" },
+    ],
+    June: [],
+    July: [],
+    August: [
+      { name: "Onam", religion: "Hindu", state: "Kerala", duration: "10 Days", tag: "Kerala's Grand Harvest Homecoming" },
+      { name: "Ganesh Chaturthi", religion: "Hindu", state: "Pan India", duration: "11 Days", tag: "Welcoming the Elephant God with Thunder and Joy" },
+    ],
+    September: [],
+    October: [
+      { name: "Navratri", religion: "Hindu", state: "Pan India", duration: "9 Days", tag: "Nine Nights of Divine Feminine Power" },
+      { name: "Durga Puja", religion: "Hindu", state: "West Bengal", duration: "5 Days", tag: "The City That Becomes a Gallery for the Goddess" },
+      { name: "Diwali", religion: "Hindu", state: "Pan India", duration: "5 Days", tag: "Festival of Lights & New Beginnings" },
+    ],
+    November: [
+      { name: "Pushkar Camel Fair", religion: "Secular", state: "Rajasthan", duration: "5 Days", tag: "A Desert Carnival Under the Stars" },
+    ],
+    December: [
+      { name: "Christmas", religion: "Christian", state: "Pan India", duration: "1 Day", tag: "The Festival of Joy, Gifts, and Midnight Mass" },
+    ],
+  };
+
+  const RELIGION_COLOR = {
+    Hindu: "#E8580A", Muslim: "#2D6A4F", Sikh: "#1B4F8A",
+    Christian: "#C0392B", Buddhist: "#4A0404", Secular: "#C9901A",
+  };
+  const RELIGION_GRAD = {
+    Hindu: "g-hindu", Muslim: "g-muslim", Sikh: "g-sikh",
+    Christian: "g-christian", Buddhist: "g-buddhist", Secular: "g-secular",
+  };
+
+  // ============ BUILD MONTH SECTIONS ============
+  const monthsEl = document.getElementById('months');
+  const ORDER = Object.keys(FESTIVALS);
+  ORDER.forEach((month, idx) => {
+    const list = FESTIVALS[month];
+    const empty = list.length === 0;
+    const num = String(idx + 1).padStart(2, '0');
+    const section = document.createElement('div');
+    section.className = 'month reveal' + (empty ? ' dim' : '');
+    section.dataset.delay = idx * 30;
+    section.innerHTML = `
+      <div class="month-big-num">${num}</div>
+      <div class="month-head">
+        <span class="month-name">${month.toUpperCase()}</span>
+        <div class="month-rule"></div>
+        ${empty ? '' : `<span class="month-count">${list.length} Festival${list.length === 1 ? '' : 's'} this month</span>`}
+      </div>
+      ${empty ? `<div class="month-empty">No featured festivals this month</div>` : `
+        <div class="cards-row">
+          ${list.map(f => {
+            const first = f.name.split(' ')[0];
+            return `
+            <a class="card" href="${f.name === 'Diwali' ? 'Diwali.html' : '#'}" style="--c:${RELIGION_COLOR[f.religion]}">
+              <div class="card-top ${RELIGION_GRAD[f.religion]}">
+                <span class="rel-badge">${f.religion}</span>
+                <div class="first-word">${first}</div>
+              </div>
+              <div class="card-body">
+                <div class="card-name">${f.name}</div>
+                <div class="card-meta">
+                  <span class="card-state">${f.state}</span>
+                  <span style="color:rgba(13,5,0,0.15)">·</span>
+                  <span class="card-dur">${f.duration}</span>
+                </div>
+                <div class="card-tag">${f.tag}</div>
+                <span class="card-link">Know More →</span>
+              </div>
+            </a>`;
+          }).join('')}
+        </div>
+      `}
+    `;
+    monthsEl.appendChild(section);
+  });
+
+  // ============ TICKER ============
+  const tickerItems = [
+    { n: "Diwali", r: "Hindu", m: "October" },
+    { n: "Holi", r: "Hindu", m: "March" },
+    { n: "Onam", r: "Hindu", m: "August" },
+    { n: "Baisakhi", r: "Sikh", m: "April" },
+    { n: "Durga Puja", r: "Hindu", m: "October" },
+    { n: "Eid ul-Fitr", r: "Muslim", m: "April" },
+    { n: "Navratri", r: "Hindu", m: "October" },
+    { n: "Pongal", r: "Hindu", m: "January" },
+    { n: "Christmas", r: "Christian", m: "December" },
+    { n: "Desert Festival", r: "Secular", m: "February" },
+    { n: "Ganesh Chaturthi", r: "Hindu", m: "August" },
+    { n: "Lohri", r: "Sikh", m: "January" },
+  ];
+  const buildItem = (it) => `
+    <div class="t-item">
+      <span class="t-name">${it.n}</span>
+      <span class="t-dot" style="--c:${RELIGION_COLOR[it.r]}"></span>
+      <span class="t-meta">${it.r} · ${it.m}</span>
+      <span class="t-sep">✦</span>
+    </div>`;
+  const tickerHTML = tickerItems.map(buildItem).join('') + tickerItems.map(buildItem).join('');
+  document.getElementById('tickerTrack').innerHTML = tickerHTML;
+
+  // ============ PARTICLES ============
+  (function makeParticles() {
+    const host = document.getElementById('particles');
+    const rand = (a, b) => Math.random() * (b - a) + a;
+    for (let i = 0; i < 22; i++) {
+      const p = document.createElement('div');
+      p.className = 'p' + (Math.random() < 0.4 ? ' s' : '');
+      const sz = rand(2, 5);
+      p.style.width = sz + 'px';
+      p.style.height = sz + 'px';
+      p.style.left = rand(0, 100) + '%';
+      p.style.top = rand(60, 110) + '%';
+      p.style.animationDuration = rand(6, 12) + 's';
+      p.style.animationDelay = (-rand(0, 8)) + 's';
+      host.appendChild(p);
+    }
+  })();
+
+  // ============ FILTER BAR APPEAR ============
+  const filterBar = document.getElementById('filterBar');
+  const heroEl = document.getElementById('hero');
+  const heroIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      filterBar.classList.toggle('in', !e.isIntersecting);
+    });
+  }, { threshold: 0, rootMargin: '-200px 0px 0px 0px' });
+  heroIO.observe(heroEl);
+
+  // ============ SCROLL REVEAL ============
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const delay = parseInt(e.target.dataset.delay || 0, 10);
+        setTimeout(() => e.target.classList.add('in'), delay);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ============ CARD STAGGER ============
+  document.querySelectorAll('.cards-row').forEach(row => {
+    [...row.children].forEach((c, i) => {
+      c.style.opacity = '0';
+      c.style.transform = 'translateY(14px)';
+      c.style.transition = 'opacity 0.6s ease, transform 0.6s cubic-bezier(.2,.7,.2,1)';
+      c.style.transitionDelay = (i * 50) + 'ms';
+    });
+  });
+  const cardIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        [...e.target.children].forEach(c => { c.style.opacity = '1'; c.style.transform = 'none'; });
+        cardIO.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.cards-row').forEach(row => cardIO.observe(row));
+
+  // ============ VIEW TOGGLE (visual only) ============
+  document.querySelectorAll('.vt').forEach(b => {
+    b.addEventListener('click', () => {
+      document.querySelectorAll('.vt').forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>

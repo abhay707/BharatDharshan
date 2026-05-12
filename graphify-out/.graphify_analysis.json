@@ -1,0 +1,221 @@
+{
+  "communities": {
+    "0": [
+      "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "filament_admin_resources_statefood_statefoodresource_php",
+      "filament_admin_resources_statefood_tables_statefoodtable_php",
+      "schemas_statefoodform_statefoodform",
+      "schemas_statefoodform_statefoodform_configure",
+      "statefood_statefoodresource_statefoodresource",
+      "statefood_statefoodresource_statefoodresource_form",
+      "statefood_statefoodresource_statefoodresource_getrelations",
+      "statefood_statefoodresource_statefoodresource_table",
+      "tables_statefoodtable_statefoodtable",
+      "tables_statefoodtable_statefoodtable_configure"
+    ],
+    "1": [
+      "filament_admin_resources_states_schemas_stateform_php",
+      "filament_admin_resources_states_stateresource_php",
+      "filament_admin_resources_states_tables_statestable_php",
+      "schemas_stateform_stateform",
+      "schemas_stateform_stateform_configure",
+      "states_stateresource_stateresource",
+      "states_stateresource_stateresource_form",
+      "states_stateresource_stateresource_getrelations",
+      "states_stateresource_stateresource_table",
+      "tables_statestable_statestable",
+      "tables_statestable_statestable_configure"
+    ],
+    "2": [
+      "filament_admin_resources_statetraditions_schemas_statetraditionform_php",
+      "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "filament_admin_resources_statetraditions_tables_statetraditionstable_php",
+      "schemas_statetraditionform_statetraditionform",
+      "schemas_statetraditionform_statetraditionform_configure",
+      "statetraditions_statetraditionresource_statetraditionresource",
+      "statetraditions_statetraditionresource_statetraditionresource_form",
+      "statetraditions_statetraditionresource_statetraditionresource_getrelations",
+      "statetraditions_statetraditionresource_statetraditionresource_table",
+      "tables_statetraditionstable_statetraditionstable",
+      "tables_statetraditionstable_statetraditionstable_configure"
+    ],
+    "3": [
+      "filament_admin_resources_statefood_pages_createstatefood_php",
+      "filament_admin_resources_statefood_pages_editstatefood_php",
+      "filament_admin_resources_statefood_pages_liststatefood_php",
+      "pages_createstatefood_createstatefood",
+      "pages_editstatefood_editstatefood",
+      "pages_editstatefood_editstatefood_getheaderactions",
+      "pages_liststatefood_liststatefood",
+      "pages_liststatefood_liststatefood_getheaderactions",
+      "statefood_statefoodresource_statefoodresource_getpages"
+    ],
+    "4": [
+      "filament_admin_resources_states_pages_createstate_php",
+      "filament_admin_resources_states_pages_editstate_php",
+      "filament_admin_resources_states_pages_liststates_php",
+      "pages_createstate_createstate",
+      "pages_editstate_editstate",
+      "pages_editstate_editstate_getheaderactions",
+      "pages_liststates_liststates",
+      "pages_liststates_liststates_getheaderactions",
+      "states_stateresource_stateresource_getpages"
+    ],
+    "5": [
+      "filament_admin_resources_statetraditions_pages_createstatetradition_php",
+      "filament_admin_resources_statetraditions_pages_editstatetradition_php",
+      "filament_admin_resources_statetraditions_pages_liststatetraditions_php",
+      "pages_createstatetradition_createstatetradition",
+      "pages_editstatetradition_editstatetradition",
+      "pages_editstatetradition_editstatetradition_getheaderactions",
+      "pages_liststatetraditions_liststatetraditions",
+      "pages_liststatetraditions_liststatetraditions_getheaderactions",
+      "statetraditions_statetraditionresource_statetraditionresource_getpages"
+    ],
+    "6": [
+      "models_state_php",
+      "models_state_state",
+      "models_state_state_culture",
+      "models_state_state_foods",
+      "models_state_state_getslugoptions",
+      "models_state_state_scopeactive",
+      "models_state_state_traditions"
+    ],
+    "7": [
+      "controllers_statecontroller_statecontroller",
+      "controllers_statecontroller_statecontroller_index",
+      "controllers_statecontroller_statecontroller_search",
+      "controllers_statecontroller_statecontroller_show",
+      "http_controllers_statecontroller_php"
+    ],
+    "8": [
+      "providers_appserviceprovider_appserviceprovider",
+      "providers_appserviceprovider_appserviceprovider_boot",
+      "providers_appserviceprovider_appserviceprovider_register",
+      "providers_appserviceprovider_php"
+    ],
+    "9": [
+      "models_user_php",
+      "models_user_user",
+      "models_user_user_canaccesspanel",
+      "models_user_user_casts"
+    ],
+    "10": [
+      "models_statefood_php",
+      "models_statefood_statefood",
+      "models_statefood_statefood_getslugoptions",
+      "models_statefood_statefood_state"
+    ],
+    "11": [
+      "filament_adminpanelprovider_adminpanelprovider",
+      "filament_adminpanelprovider_adminpanelprovider_panel",
+      "providers_filament_adminpanelprovider_php"
+    ],
+    "12": [
+      "models_stateculture_php",
+      "models_stateculture_stateculture",
+      "models_stateculture_stateculture_state"
+    ],
+    "13": [
+      "models_statetradition_php",
+      "models_statetradition_statetradition",
+      "models_statetradition_statetradition_state"
+    ],
+    "14": [
+      "controllers_controller_controller",
+      "http_controllers_controller_php"
+    ]
+  },
+  "cohesion": {
+    "0": 0.18,
+    "1": 0.18,
+    "2": 0.18,
+    "3": 0.22,
+    "4": 0.22,
+    "5": 0.22,
+    "6": 0.29,
+    "7": 0.4,
+    "8": 0.5,
+    "9": 0.5,
+    "10": 0.5,
+    "11": 0.67,
+    "12": 0.67,
+    "13": 0.67,
+    "14": 1.0
+  },
+  "gods": [
+    {
+      "id": "models_state_state",
+      "label": "State",
+      "degree": 6
+    },
+    {
+      "id": "statefood_statefoodresource_statefoodresource",
+      "label": "StateFoodResource",
+      "degree": 5
+    },
+    {
+      "id": "states_stateresource_stateresource",
+      "label": "StateResource",
+      "degree": 5
+    },
+    {
+      "id": "statetraditions_statetraditionresource_statetraditionresource",
+      "label": "StateTraditionResource",
+      "degree": 5
+    },
+    {
+      "id": "controllers_statecontroller_statecontroller",
+      "label": "StateController",
+      "degree": 4
+    },
+    {
+      "id": "providers_appserviceprovider_appserviceprovider",
+      "label": "AppServiceProvider",
+      "degree": 3
+    },
+    {
+      "id": "models_user_user",
+      "label": "User",
+      "degree": 3
+    },
+    {
+      "id": "models_statefood_statefood",
+      "label": "StateFood",
+      "degree": 3
+    },
+    {
+      "id": "tables_statefoodtable_statefoodtable",
+      "label": "StateFoodTable",
+      "degree": 3
+    },
+    {
+      "id": "schemas_statefoodform_statefoodform",
+      "label": "StateFoodForm",
+      "degree": 3
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `StateFoodResource` connect `Community 0` to `Community 3`?",
+      "why": "High betweenness centrality (0.028) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `StateResource` connect `Community 1` to `Community 4`?",
+      "why": "High betweenness centrality (0.028) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `StateTraditionResource` connect `Community 2` to `Community 5`?",
+      "why": "High betweenness centrality (0.028) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Controller` to the rest of the system?",
+      "why": "1 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

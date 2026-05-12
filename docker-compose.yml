@@ -1,0 +1,68 @@
+# docker-compose.yml — for LOCAL testing of the production Docker image
+# ⚠️  NOT used on Render. Render reads only the Dockerfile.
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    image: bharatdarshan:local
+    container_name: bharatdarshan_app
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      APP_NAME: "BharatDarshan"
+      APP_ENV: production
+      APP_KEY: ${APP_KEY}          # set in your local .env or shell
+      APP_DEBUG: "false"
+      APP_URL: "http://localhost:8080"
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: bharatdarshan_db
+      DB_USERNAME: bharatdarshan
+      DB_PASSWORD: secret
+      SESSION_DRIVER: database
+      CACHE_STORE: database
+      QUEUE_CONNECTION: database
+      FILESYSTEM_DISK: local
+      LOG_CHANNEL: stderr
+      LOG_LEVEL: error
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - storage_data:/var/www/html/storage/app/public
+    networks:
+      - bharatdarshan_net
+
+  db:
+    image: mysql:8.4
+    container_name: bharatdarshan_db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: bharatdarshan_db
+      MYSQL_USER: bharatdarshan
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: rootsecret
+    ports:
+      - "3307:3306"   # exposed on 3307 to avoid conflict with local MySQL
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-ubharatdarshan", "-psecret"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - bharatdarshan_net
+
+volumes:
+  db_data:
+  storage_data:
+
+networks:
+  bharatdarshan_net:
+    driver: bridge

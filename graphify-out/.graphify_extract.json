@@ -1,0 +1,2991 @@
+{
+  "nodes": [
+    {
+      "id": "providers_appserviceprovider_php",
+      "label": "AppServiceProvider.php",
+      "file_type": "code",
+      "source_file": "Providers/AppServiceProvider.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "providers_appserviceprovider_appserviceprovider",
+      "label": "AppServiceProvider",
+      "file_type": "code",
+      "source_file": "Providers/AppServiceProvider.php",
+      "source_location": "L7"
+    },
+    {
+      "id": "providers_appserviceprovider_appserviceprovider_register",
+      "label": ".register()",
+      "file_type": "code",
+      "source_file": "Providers/AppServiceProvider.php",
+      "source_location": "L12"
+    },
+    {
+      "id": "providers_appserviceprovider_appserviceprovider_boot",
+      "label": ".boot()",
+      "file_type": "code",
+      "source_file": "Providers/AppServiceProvider.php",
+      "source_location": "L20"
+    },
+    {
+      "id": "providers_filament_adminpanelprovider_php",
+      "label": "AdminPanelProvider.php",
+      "file_type": "code",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "filament_adminpanelprovider_adminpanelprovider",
+      "label": "AdminPanelProvider",
+      "file_type": "code",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L22"
+    },
+    {
+      "id": "filament_adminpanelprovider_adminpanelprovider_panel",
+      "label": ".panel()",
+      "file_type": "code",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L24"
+    },
+    {
+      "id": "models_stateculture_php",
+      "label": "StateCulture.php",
+      "file_type": "code",
+      "source_file": "Models/StateCulture.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "models_stateculture_stateculture",
+      "label": "StateCulture",
+      "file_type": "code",
+      "source_file": "Models/StateCulture.php",
+      "source_location": "L8"
+    },
+    {
+      "id": "models_stateculture_stateculture_state",
+      "label": ".state()",
+      "file_type": "code",
+      "source_file": "Models/StateCulture.php",
+      "source_location": "L22"
+    },
+    {
+      "id": "models_statetradition_php",
+      "label": "StateTradition.php",
+      "file_type": "code",
+      "source_file": "Models/StateTradition.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "models_statetradition_statetradition",
+      "label": "StateTradition",
+      "file_type": "code",
+      "source_file": "Models/StateTradition.php",
+      "source_location": "L10"
+    },
+    {
+      "id": "models_statetradition_statetradition_state",
+      "label": ".state()",
+      "file_type": "code",
+      "source_file": "Models/StateTradition.php",
+      "source_location": "L24"
+    },
+    {
+      "id": "models_user_php",
+      "label": "User.php",
+      "file_type": "code",
+      "source_file": "Models/User.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "models_user_user",
+      "label": "User",
+      "file_type": "code",
+      "source_file": "Models/User.php",
+      "source_location": "L15"
+    },
+    {
+      "id": "models_user_user_canaccesspanel",
+      "label": ".canAccessPanel()",
+      "file_type": "code",
+      "source_file": "Models/User.php",
+      "source_location": "L22"
+    },
+    {
+      "id": "models_user_user_casts",
+      "label": ".casts()",
+      "file_type": "code",
+      "source_file": "Models/User.php",
+      "source_location": "L32"
+    },
+    {
+      "id": "models_state_php",
+      "label": "State.php",
+      "file_type": "code",
+      "source_file": "Models/State.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "models_state_state",
+      "label": "State",
+      "file_type": "code",
+      "source_file": "Models/State.php",
+      "source_location": "L14"
+    },
+    {
+      "id": "models_state_state_getslugoptions",
+      "label": ".getSlugOptions()",
+      "file_type": "code",
+      "source_file": "Models/State.php",
+      "source_location": "L32"
+    },
+    {
+      "id": "models_state_state_scopeactive",
+      "label": ".scopeActive()",
+      "file_type": "code",
+      "source_file": "Models/State.php",
+      "source_location": "L39"
+    },
+    {
+      "id": "models_state_state_culture",
+      "label": ".culture()",
+      "file_type": "code",
+      "source_file": "Models/State.php",
+      "source_location": "L44"
+    },
+    {
+      "id": "models_state_state_foods",
+      "label": ".foods()",
+      "file_type": "code",
+      "source_file": "Models/State.php",
+      "source_location": "L49"
+    },
+    {
+      "id": "models_state_state_traditions",
+      "label": ".traditions()",
+      "file_type": "code",
+      "source_file": "Models/State.php",
+      "source_location": "L54"
+    },
+    {
+      "id": "models_statefood_php",
+      "label": "StateFood.php",
+      "file_type": "code",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "models_statefood_statefood",
+      "label": "StateFood",
+      "file_type": "code",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L12"
+    },
+    {
+      "id": "models_statefood_statefood_getslugoptions",
+      "label": ".getSlugOptions()",
+      "file_type": "code",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L34"
+    },
+    {
+      "id": "models_statefood_statefood_state",
+      "label": ".state()",
+      "file_type": "code",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L41"
+    },
+    {
+      "id": "filament_admin_resources_statefood_statefoodresource_php",
+      "label": "StateFoodResource.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "statefood_statefoodresource_statefoodresource",
+      "label": "StateFoodResource",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L18"
+    },
+    {
+      "id": "statefood_statefoodresource_statefoodresource_form",
+      "label": ".form()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L32"
+    },
+    {
+      "id": "statefood_statefoodresource_statefoodresource_table",
+      "label": ".table()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L37"
+    },
+    {
+      "id": "statefood_statefoodresource_statefoodresource_getrelations",
+      "label": ".getRelations()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L42"
+    },
+    {
+      "id": "statefood_statefoodresource_statefoodresource_getpages",
+      "label": ".getPages()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L47"
+    },
+    {
+      "id": "filament_admin_resources_statefood_tables_statefoodtable_php",
+      "label": "StateFoodTable.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "tables_statefoodtable_statefoodtable",
+      "label": "StateFoodTable",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L13"
+    },
+    {
+      "id": "tables_statefoodtable_statefoodtable_configure",
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L15"
+    },
+    {
+      "id": "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "label": "StateFoodForm.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "schemas_statefoodform_statefoodform",
+      "label": "StateFoodForm",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L14"
+    },
+    {
+      "id": "schemas_statefoodform_statefoodform_configure",
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L16"
+    },
+    {
+      "id": "filament_admin_resources_statefood_pages_editstatefood_php",
+      "label": "EditStateFood.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/EditStateFood.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_editstatefood_editstatefood",
+      "label": "EditStateFood",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/EditStateFood.php",
+      "source_location": "L9"
+    },
+    {
+      "id": "pages_editstatefood_editstatefood_getheaderactions",
+      "label": ".getHeaderActions()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/EditStateFood.php",
+      "source_location": "L13"
+    },
+    {
+      "id": "filament_admin_resources_statefood_pages_createstatefood_php",
+      "label": "CreateStateFood.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/CreateStateFood.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_createstatefood_createstatefood",
+      "label": "CreateStateFood",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/CreateStateFood.php",
+      "source_location": "L8"
+    },
+    {
+      "id": "filament_admin_resources_statefood_pages_liststatefood_php",
+      "label": "ListStateFood.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/ListStateFood.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_liststatefood_liststatefood",
+      "label": "ListStateFood",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/ListStateFood.php",
+      "source_location": "L9"
+    },
+    {
+      "id": "pages_liststatefood_liststatefood_getheaderactions",
+      "label": ".getHeaderActions()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/ListStateFood.php",
+      "source_location": "L13"
+    },
+    {
+      "id": "filament_admin_resources_states_stateresource_php",
+      "label": "StateResource.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "states_stateresource_stateresource",
+      "label": "StateResource",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L18"
+    },
+    {
+      "id": "states_stateresource_stateresource_form",
+      "label": ".form()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L32"
+    },
+    {
+      "id": "states_stateresource_stateresource_table",
+      "label": ".table()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L37"
+    },
+    {
+      "id": "states_stateresource_stateresource_getrelations",
+      "label": ".getRelations()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L42"
+    },
+    {
+      "id": "states_stateresource_stateresource_getpages",
+      "label": ".getPages()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L47"
+    },
+    {
+      "id": "filament_admin_resources_states_tables_statestable_php",
+      "label": "StatesTable.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "tables_statestable_statestable",
+      "label": "StatesTable",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L14"
+    },
+    {
+      "id": "tables_statestable_statestable_configure",
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L16"
+    },
+    {
+      "id": "filament_admin_resources_states_schemas_stateform_php",
+      "label": "StateForm.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "schemas_stateform_stateform",
+      "label": "StateForm",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L15"
+    },
+    {
+      "id": "schemas_stateform_stateform_configure",
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L17"
+    },
+    {
+      "id": "filament_admin_resources_states_pages_liststates_php",
+      "label": "ListStates.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Pages/ListStates.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_liststates_liststates",
+      "label": "ListStates",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Pages/ListStates.php",
+      "source_location": "L9"
+    },
+    {
+      "id": "pages_liststates_liststates_getheaderactions",
+      "label": ".getHeaderActions()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Pages/ListStates.php",
+      "source_location": "L13"
+    },
+    {
+      "id": "filament_admin_resources_states_pages_createstate_php",
+      "label": "CreateState.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Pages/CreateState.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_createstate_createstate",
+      "label": "CreateState",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Pages/CreateState.php",
+      "source_location": "L8"
+    },
+    {
+      "id": "filament_admin_resources_states_pages_editstate_php",
+      "label": "EditState.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Pages/EditState.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_editstate_editstate",
+      "label": "EditState",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Pages/EditState.php",
+      "source_location": "L9"
+    },
+    {
+      "id": "pages_editstate_editstate_getheaderactions",
+      "label": ".getHeaderActions()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/States/Pages/EditState.php",
+      "source_location": "L13"
+    },
+    {
+      "id": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "label": "StateTraditionResource.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "statetraditions_statetraditionresource_statetraditionresource",
+      "label": "StateTraditionResource",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L18"
+    },
+    {
+      "id": "statetraditions_statetraditionresource_statetraditionresource_form",
+      "label": ".form()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L32"
+    },
+    {
+      "id": "statetraditions_statetraditionresource_statetraditionresource_table",
+      "label": ".table()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L37"
+    },
+    {
+      "id": "statetraditions_statetraditionresource_statetraditionresource_getrelations",
+      "label": ".getRelations()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L42"
+    },
+    {
+      "id": "statetraditions_statetraditionresource_statetraditionresource_getpages",
+      "label": ".getPages()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L47"
+    },
+    {
+      "id": "filament_admin_resources_statetraditions_tables_statetraditionstable_php",
+      "label": "StateTraditionsTable.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "tables_statetraditionstable_statetraditionstable",
+      "label": "StateTraditionsTable",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L12"
+    },
+    {
+      "id": "tables_statetraditionstable_statetraditionstable_configure",
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L14"
+    },
+    {
+      "id": "filament_admin_resources_statetraditions_schemas_statetraditionform_php",
+      "label": "StateTraditionForm.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "schemas_statetraditionform_statetraditionform",
+      "label": "StateTraditionForm",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L12"
+    },
+    {
+      "id": "schemas_statetraditionform_statetraditionform_configure",
+      "label": ".configure()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L14"
+    },
+    {
+      "id": "filament_admin_resources_statetraditions_pages_createstatetradition_php",
+      "label": "CreateStateTradition.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/CreateStateTradition.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_createstatetradition_createstatetradition",
+      "label": "CreateStateTradition",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/CreateStateTradition.php",
+      "source_location": "L8"
+    },
+    {
+      "id": "filament_admin_resources_statetraditions_pages_liststatetraditions_php",
+      "label": "ListStateTraditions.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/ListStateTraditions.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_liststatetraditions_liststatetraditions",
+      "label": "ListStateTraditions",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/ListStateTraditions.php",
+      "source_location": "L9"
+    },
+    {
+      "id": "pages_liststatetraditions_liststatetraditions_getheaderactions",
+      "label": ".getHeaderActions()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/ListStateTraditions.php",
+      "source_location": "L13"
+    },
+    {
+      "id": "filament_admin_resources_statetraditions_pages_editstatetradition_php",
+      "label": "EditStateTradition.php",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/EditStateTradition.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "pages_editstatetradition_editstatetradition",
+      "label": "EditStateTradition",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/EditStateTradition.php",
+      "source_location": "L9"
+    },
+    {
+      "id": "pages_editstatetradition_editstatetradition_getheaderactions",
+      "label": ".getHeaderActions()",
+      "file_type": "code",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/EditStateTradition.php",
+      "source_location": "L13"
+    },
+    {
+      "id": "http_controllers_controller_php",
+      "label": "Controller.php",
+      "file_type": "code",
+      "source_file": "Http/Controllers/Controller.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "controllers_controller_controller",
+      "label": "Controller",
+      "file_type": "code",
+      "source_file": "Http/Controllers/Controller.php",
+      "source_location": "L5"
+    },
+    {
+      "id": "http_controllers_statecontroller_php",
+      "label": "StateController.php",
+      "file_type": "code",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L1"
+    },
+    {
+      "id": "controllers_statecontroller_statecontroller",
+      "label": "StateController",
+      "file_type": "code",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L11"
+    },
+    {
+      "id": "controllers_statecontroller_statecontroller_index",
+      "label": ".index()",
+      "file_type": "code",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L13"
+    },
+    {
+      "id": "controllers_statecontroller_statecontroller_show",
+      "label": ".show()",
+      "file_type": "code",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L23"
+    },
+    {
+      "id": "controllers_statecontroller_statecontroller_search",
+      "label": ".search()",
+      "file_type": "code",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L35"
+    }
+  ],
+  "edges": [
+    {
+      "source": "providers_appserviceprovider_php",
+      "target": "serviceprovider",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/AppServiceProvider.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_appserviceprovider_php",
+      "target": "providers_appserviceprovider_appserviceprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/AppServiceProvider.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_appserviceprovider_appserviceprovider",
+      "target": "providers_appserviceprovider_appserviceprovider_register",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/AppServiceProvider.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_appserviceprovider_appserviceprovider",
+      "target": "providers_appserviceprovider_appserviceprovider_boot",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/AppServiceProvider.php",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "authenticate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "authenticatesession",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "disablebladeiconcomponents",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "dispatchservingfilamentevent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "dashboard",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "panel",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "panelprovider",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "color",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "accountwidget",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "filamentinfowidget",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "addqueuedcookiestoresponse",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "encryptcookies",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "preventrequestforgery",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "substitutebindings",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "startsession",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "shareerrorsfromsession",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "providers_filament_adminpanelprovider_php",
+      "target": "filament_adminpanelprovider_adminpanelprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_adminpanelprovider_adminpanelprovider",
+      "target": "filament_adminpanelprovider_adminpanelprovider_panel",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Providers/Filament/AdminPanelProvider.php",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "models_stateculture_php",
+      "target": "model",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateCulture.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "models_stateculture_php",
+      "target": "belongsto",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateCulture.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "models_stateculture_php",
+      "target": "models_stateculture_stateculture",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateCulture.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "models_stateculture_stateculture",
+      "target": "models_stateculture_stateculture_state",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateCulture.php",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statetradition_php",
+      "target": "model",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateTradition.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statetradition_php",
+      "target": "belongsto",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateTradition.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statetradition_php",
+      "target": "hasmedia",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateTradition.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statetradition_php",
+      "target": "interactswithmedia",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateTradition.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statetradition_php",
+      "target": "models_statetradition_statetradition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateTradition.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statetradition_statetradition",
+      "target": "models_statetradition_statetradition_state",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateTradition.php",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_php",
+      "target": "userfactory",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_php",
+      "target": "filamentuser",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_php",
+      "target": "panel",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_php",
+      "target": "fillable",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_php",
+      "target": "hidden",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_php",
+      "target": "hasfactory",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_php",
+      "target": "user",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_php",
+      "target": "notifiable",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_php",
+      "target": "models_user_user",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_user",
+      "target": "models_user_user_canaccesspanel",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "models_user_user",
+      "target": "models_user_user_casts",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/User.php",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_php",
+      "target": "builder",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_php",
+      "target": "model",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_php",
+      "target": "hasmany",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_php",
+      "target": "hasone",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_php",
+      "target": "hasmedia",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_php",
+      "target": "interactswithmedia",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_php",
+      "target": "hasslug",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_php",
+      "target": "slugoptions",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_php",
+      "target": "models_state_state",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_state",
+      "target": "models_state_state_getslugoptions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_state",
+      "target": "models_state_state_scopeactive",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_state",
+      "target": "models_state_state_culture",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_state",
+      "target": "models_state_state_foods",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "models_state_state",
+      "target": "models_state_state_traditions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/State.php",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statefood_php",
+      "target": "model",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statefood_php",
+      "target": "belongsto",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statefood_php",
+      "target": "hasmedia",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statefood_php",
+      "target": "interactswithmedia",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statefood_php",
+      "target": "hasslug",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statefood_php",
+      "target": "slugoptions",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statefood_php",
+      "target": "models_statefood_statefood",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statefood_statefood",
+      "target": "models_statefood_statefood_getslugoptions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "models_statefood_statefood",
+      "target": "models_statefood_statefood_state",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Models/StateFood.php",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "createstatefood",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "editstatefood",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "liststatefood",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "statefoodform",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "statefoodtable",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "statefood",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "backedenum",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "resource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "unitenum",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "schema",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "heroicon",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "table",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_statefoodresource_php",
+      "target": "statefood_statefoodresource_statefoodresource",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "statefood_statefoodresource_statefoodresource",
+      "target": "statefood_statefoodresource_statefoodresource_form",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "statefood_statefoodresource_statefoodresource",
+      "target": "statefood_statefoodresource_statefoodresource_table",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "statefood_statefoodresource_statefoodresource",
+      "target": "statefood_statefoodresource_statefoodresource_getrelations",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "statefood_statefoodresource_statefoodresource",
+      "target": "statefood_statefoodresource_statefoodresource_getpages",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_tables_statefoodtable_php",
+      "target": "bulkactiongroup",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_tables_statefoodtable_php",
+      "target": "deletebulkaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_tables_statefoodtable_php",
+      "target": "editaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_tables_statefoodtable_php",
+      "target": "iconcolumn",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_tables_statefoodtable_php",
+      "target": "textcolumn",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_tables_statefoodtable_php",
+      "target": "selectfilter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_tables_statefoodtable_php",
+      "target": "table",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_tables_statefoodtable_php",
+      "target": "tables_statefoodtable_statefoodtable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "tables_statefoodtable_statefoodtable",
+      "target": "tables_statefoodtable_statefoodtable_configure",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Tables/StateFoodTable.php",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "target": "section",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "target": "select",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "target": "spatiemedialibraryfileupload",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "target": "textarea",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "target": "textinput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "target": "toggle",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "target": "schema",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "target": "str",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_schemas_statefoodform_php",
+      "target": "schemas_statefoodform_statefoodform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "schemas_statefoodform_statefoodform",
+      "target": "schemas_statefoodform_statefoodform_configure",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Schemas/StateFoodForm.php",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_editstatefood_php",
+      "target": "statefoodresource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/EditStateFood.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_editstatefood_php",
+      "target": "deleteaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/EditStateFood.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_editstatefood_php",
+      "target": "editrecord",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/EditStateFood.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_editstatefood_php",
+      "target": "pages_editstatefood_editstatefood",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/EditStateFood.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "pages_editstatefood_editstatefood",
+      "target": "pages_editstatefood_editstatefood_getheaderactions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/EditStateFood.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_createstatefood_php",
+      "target": "statefoodresource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/CreateStateFood.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_createstatefood_php",
+      "target": "createrecord",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/CreateStateFood.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_createstatefood_php",
+      "target": "pages_createstatefood_createstatefood",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/CreateStateFood.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_liststatefood_php",
+      "target": "statefoodresource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/ListStateFood.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_liststatefood_php",
+      "target": "createaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/ListStateFood.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_liststatefood_php",
+      "target": "listrecords",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/ListStateFood.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statefood_pages_liststatefood_php",
+      "target": "pages_liststatefood_liststatefood",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/ListStateFood.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "pages_liststatefood_liststatefood",
+      "target": "pages_liststatefood_liststatefood_getheaderactions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateFood/Pages/ListStateFood.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "createstate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "editstate",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "liststates",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "stateform",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "statestable",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "state",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "backedenum",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "resource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "unitenum",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "schema",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "heroicon",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "table",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_stateresource_php",
+      "target": "states_stateresource_stateresource",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "states_stateresource_stateresource",
+      "target": "states_stateresource_stateresource_form",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "states_stateresource_stateresource",
+      "target": "states_stateresource_stateresource_table",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "states_stateresource_stateresource",
+      "target": "states_stateresource_stateresource_getrelations",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "states_stateresource_stateresource",
+      "target": "states_stateresource_stateresource_getpages",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_tables_statestable_php",
+      "target": "bulkactiongroup",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_tables_statestable_php",
+      "target": "deletebulkaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_tables_statestable_php",
+      "target": "editaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_tables_statestable_php",
+      "target": "textcolumn",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_tables_statestable_php",
+      "target": "togglecolumn",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_tables_statestable_php",
+      "target": "selectfilter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_tables_statestable_php",
+      "target": "ternaryfilter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_tables_statestable_php",
+      "target": "table",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_tables_statestable_php",
+      "target": "tables_statestable_statestable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "tables_statestable_statestable",
+      "target": "tables_statestable_statestable_configure",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Tables/StatesTable.php",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_schemas_stateform_php",
+      "target": "datepicker",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_schemas_stateform_php",
+      "target": "section",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_schemas_stateform_php",
+      "target": "select",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_schemas_stateform_php",
+      "target": "spatiemedialibraryfileupload",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_schemas_stateform_php",
+      "target": "textarea",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_schemas_stateform_php",
+      "target": "textinput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_schemas_stateform_php",
+      "target": "toggle",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_schemas_stateform_php",
+      "target": "schema",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_schemas_stateform_php",
+      "target": "str",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_schemas_stateform_php",
+      "target": "schemas_stateform_stateform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "schemas_stateform_stateform",
+      "target": "schemas_stateform_stateform_configure",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Schemas/StateForm.php",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_liststates_php",
+      "target": "stateresource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/ListStates.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_liststates_php",
+      "target": "createaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/ListStates.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_liststates_php",
+      "target": "listrecords",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/ListStates.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_liststates_php",
+      "target": "pages_liststates_liststates",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/ListStates.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "pages_liststates_liststates",
+      "target": "pages_liststates_liststates_getheaderactions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/ListStates.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_createstate_php",
+      "target": "stateresource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/CreateState.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_createstate_php",
+      "target": "createrecord",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/CreateState.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_createstate_php",
+      "target": "pages_createstate_createstate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/CreateState.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_editstate_php",
+      "target": "stateresource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/EditState.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_editstate_php",
+      "target": "deleteaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/EditState.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_editstate_php",
+      "target": "editrecord",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/EditState.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_states_pages_editstate_php",
+      "target": "pages_editstate_editstate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/EditState.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "pages_editstate_editstate",
+      "target": "pages_editstate_editstate_getheaderactions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/States/Pages/EditState.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "createstatetradition",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "editstatetradition",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "liststatetraditions",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "statetraditionform",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "statetraditionstable",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "statetradition",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "backedenum",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "resource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "unitenum",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "schema",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "heroicon",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "table",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_statetraditionresource_php",
+      "target": "statetraditions_statetraditionresource_statetraditionresource",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "statetraditions_statetraditionresource_statetraditionresource",
+      "target": "statetraditions_statetraditionresource_statetraditionresource_form",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "statetraditions_statetraditionresource_statetraditionresource",
+      "target": "statetraditions_statetraditionresource_statetraditionresource_table",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "statetraditions_statetraditionresource_statetraditionresource",
+      "target": "statetraditions_statetraditionresource_statetraditionresource_getrelations",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L42",
+      "weight": 1.0
+    },
+    {
+      "source": "statetraditions_statetraditionresource_statetraditionresource",
+      "target": "statetraditions_statetraditionresource_statetraditionresource_getpages",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_tables_statetraditionstable_php",
+      "target": "bulkactiongroup",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_tables_statetraditionstable_php",
+      "target": "deletebulkaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_tables_statetraditionstable_php",
+      "target": "editaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_tables_statetraditionstable_php",
+      "target": "textcolumn",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_tables_statetraditionstable_php",
+      "target": "selectfilter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_tables_statetraditionstable_php",
+      "target": "table",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_tables_statetraditionstable_php",
+      "target": "tables_statetraditionstable_statetraditionstable",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "tables_statetraditionstable_statetraditionstable",
+      "target": "tables_statetraditionstable_statetraditionstable_configure",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Tables/StateTraditionsTable.php",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_schemas_statetraditionform_php",
+      "target": "section",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_schemas_statetraditionform_php",
+      "target": "select",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_schemas_statetraditionform_php",
+      "target": "spatiemedialibraryfileupload",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_schemas_statetraditionform_php",
+      "target": "textarea",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_schemas_statetraditionform_php",
+      "target": "textinput",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_schemas_statetraditionform_php",
+      "target": "schema",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_schemas_statetraditionform_php",
+      "target": "schemas_statetraditionform_statetraditionform",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "schemas_statetraditionform_statetraditionform",
+      "target": "schemas_statetraditionform_statetraditionform_configure",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Schemas/StateTraditionForm.php",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_createstatetradition_php",
+      "target": "statetraditionresource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/CreateStateTradition.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_createstatetradition_php",
+      "target": "createrecord",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/CreateStateTradition.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_createstatetradition_php",
+      "target": "pages_createstatetradition_createstatetradition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/CreateStateTradition.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_liststatetraditions_php",
+      "target": "statetraditionresource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/ListStateTraditions.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_liststatetraditions_php",
+      "target": "createaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/ListStateTraditions.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_liststatetraditions_php",
+      "target": "listrecords",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/ListStateTraditions.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_liststatetraditions_php",
+      "target": "pages_liststatetraditions_liststatetraditions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/ListStateTraditions.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "pages_liststatetraditions_liststatetraditions",
+      "target": "pages_liststatetraditions_liststatetraditions_getheaderactions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/ListStateTraditions.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_editstatetradition_php",
+      "target": "statetraditionresource",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/EditStateTradition.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_editstatetradition_php",
+      "target": "deleteaction",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/EditStateTradition.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_editstatetradition_php",
+      "target": "editrecord",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/EditStateTradition.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "filament_admin_resources_statetraditions_pages_editstatetradition_php",
+      "target": "pages_editstatetradition_editstatetradition",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/EditStateTradition.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "pages_editstatetradition_editstatetradition",
+      "target": "pages_editstatetradition_editstatetradition_getheaderactions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Filament/Admin/Resources/StateTraditions/Pages/EditStateTradition.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "http_controllers_controller_php",
+      "target": "controllers_controller_controller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Http/Controllers/Controller.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "http_controllers_statecontroller_php",
+      "target": "state",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "http_controllers_statecontroller_php",
+      "target": "jsonresponse",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "http_controllers_statecontroller_php",
+      "target": "redirectresponse",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "http_controllers_statecontroller_php",
+      "target": "request",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "http_controllers_statecontroller_php",
+      "target": "view",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "http_controllers_statecontroller_php",
+      "target": "controllers_statecontroller_statecontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "controllers_statecontroller_statecontroller",
+      "target": "controllers_statecontroller_statecontroller_index",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "controllers_statecontroller_statecontroller",
+      "target": "controllers_statecontroller_statecontroller_show",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "controllers_statecontroller_statecontroller",
+      "target": "controllers_statecontroller_statecontroller_search",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Http/Controllers/StateController.php",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "statefood_statefoodresource_statefoodresource_form",
+      "target": "schemas_statefoodform_statefoodform",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "statefood_statefoodresource_statefoodresource_table",
+      "target": "tables_statefoodtable_statefoodtable",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "statefood_statefoodresource_statefoodresource_getpages",
+      "target": "pages_liststatefood_liststatefood",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "statefood_statefoodresource_statefoodresource_getpages",
+      "target": "pages_createstatefood_createstatefood",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "statefood_statefoodresource_statefoodresource_getpages",
+      "target": "pages_editstatefood_editstatefood",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/StateFood/StateFoodResource.php",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "states_stateresource_stateresource_form",
+      "target": "schemas_stateform_stateform",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "states_stateresource_stateresource_table",
+      "target": "tables_statestable_statestable",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "states_stateresource_stateresource_getpages",
+      "target": "pages_liststates_liststates",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "states_stateresource_stateresource_getpages",
+      "target": "pages_createstate_createstate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "states_stateresource_stateresource_getpages",
+      "target": "pages_editstate_editstate",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/States/StateResource.php",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "statetraditions_statetraditionresource_statetraditionresource_form",
+      "target": "schemas_statetraditionform_statetraditionform",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "statetraditions_statetraditionresource_statetraditionresource_table",
+      "target": "tables_statetraditionstable_statetraditionstable",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "statetraditions_statetraditionresource_statetraditionresource_getpages",
+      "target": "pages_liststatetraditions_liststatetraditions",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "statetraditions_statetraditionresource_statetraditionresource_getpages",
+      "target": "pages_createstatetradition_createstatetradition",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "statetraditions_statetraditionresource_statetraditionresource_getpages",
+      "target": "pages_editstatetradition_editstatetradition",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Filament/Admin/Resources/StateTraditions/StateTraditionResource.php",
+      "source_location": "L52",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

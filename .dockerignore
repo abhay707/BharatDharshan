@@ -1,0 +1,32 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Node build artifacts (built inside Docker)
+node_modules/
+
+# Local env file (Render provides its own)
+.env
+.env.*
+!.env.example
+
+# Dev/test only
+tests/
+storage/logs/*.log
+
+# Design files & docs
+Designs/
+graphify-out/
+*.md
+*.py
+
+# Editor configs
+.editorconfig
+.vscode/
+.idea/
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
