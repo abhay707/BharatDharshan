@@ -100,6 +100,9 @@ COPY . .
 # Remove local .env so Render injects its own env vars
 RUN rm -f .env
 
+# Create log directories required by supervisor and nginx
+RUN mkdir -p /var/log/supervisor /var/log/nginx /run/nginx
+
 # Fix permissions
 RUN chown -R www-data:www-data /var/www/html \
  && chmod -R 755 /var/www/html/storage \
