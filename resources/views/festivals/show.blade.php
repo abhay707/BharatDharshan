@@ -756,9 +756,15 @@
 @endsection
 
 @section('content')
+@php
+$festivalLandscapes = [
+    'diwali' => '/images/Festival/Diwali landscape.jpg',
+];
+$heroImg = $festivalLandscapes[$festival->slug] ?? null;
+@endphp
 <!-- HERO -->
 <section class="hero" data-screen-label="01 Hero">
-  <div class="hero-bg" @if($festival->getFirstMediaUrl('festival-cover')) style="background: radial-gradient(ellipse at 50% 30%, rgba(232, 88, 10, 0.45) 0%, transparent 55%), radial-gradient(ellipse at 20% 80%, rgba(201, 144, 26, 0.25) 0%, transparent 50%), linear-gradient(160deg, #2a0a02 0%, #5a1408 35%, #8B1A1A 70%, #C9901A 100%), url('{{ $festival->getFirstMediaUrl('festival-cover') }}') center/cover no-repeat;" @endif></div>
+  <div class="hero-bg" @if($heroImg) style="background: linear-gradient(to top, rgba(13,5,0,0.92) 0%, rgba(13,5,0,0.55) 45%, rgba(13,5,0,0.15) 100%), url('{{ $heroImg }}') center/cover no-repeat;" @endif></div>
   <div class="mandala-hero"></div>
   <div class="particles" id="particles"></div>
   <div class="hero-darken"></div>

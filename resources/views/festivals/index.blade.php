@@ -276,6 +276,11 @@
 @endsection
 
 @section('content')
+@php
+$festivalPortraits = [
+    'diwali' => '/images/Festival/Diwali Portorate.jpg',
+];
+@endphp
 
 <!-- HERO -->
 <section class="hero" id="hero" data-screen-label="01 Hero">
@@ -427,6 +432,9 @@
                  class="festival-card"
                  style="--c:{{ $borderColors[$festival->religion] ?? '#C9901A' }}">
                 <div class="card-top {{ $gradClasses[$festival->religion] ?? 'g-hindu' }}">
+                  @if(isset($festivalPortraits[$festival->slug]))
+                    <img src="{{ $festivalPortraits[$festival->slug] }}" alt="{{ $festival->name }}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;mix-blend-mode:overlay;opacity:0.7;">
+                  @endif
                   <span class="rel-badge">{{ $festival->religion }}</span>
                   <div class="first-word">{{ Str::words($festival->name, 1, '') }}</div>
                 </div>
